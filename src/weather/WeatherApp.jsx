@@ -29,7 +29,6 @@ ChartJS.register(
   Tooltip,
   Legend
 );
-
 import { useNavigate } from "react-router-dom";
 import HeaderBar from "../news/HeaderBar";
 

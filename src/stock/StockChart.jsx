@@ -20,6 +20,31 @@ import { Card, CardContent, CardHeader } from "@mui/material";
 import HeaderBar from "../news/HeaderBar";
 import { useNavigate } from "react-router-dom";
 
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  BarElement,
+  BarController,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  BarElement,
+  BarController,
+  Title,
+  Tooltip,
+  Legend
+);
+
 const StockChart = () => {
   const [loading, setLoading] = useState(false);
   const [days, setDays] = useState(7);
