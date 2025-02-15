@@ -7,7 +7,7 @@ import NewsWidget from "./news/NewsWidget.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CryptoWidget from "./crypto/CryptoWidget.jsx";
 import CryptoChart from "./crypto/CryptoChart.jsx";
-import StockChart from "./stock/stockChart.jsx";
+import StockChart from "./stock/StockChart.jsx";
 import WeatherApp from "./weather/WeatherApp.jsx";
 import Dashboard from "../Dashboard.jsx";
 
