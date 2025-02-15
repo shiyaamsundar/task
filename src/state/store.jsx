@@ -4,7 +4,7 @@ import { weatherApi } from "./weather/weatherApiSlice";
 import { stockApi } from "./stock/stockApiSlice";
 import stockReducer from "./stock/stockSlice";
 import { newsApi } from "./news/newsApiSlice";
-import cryptoReducer from "./crypto/cryptoSLice";
+import cryptoReducer from "./crypto/cryptoSlice";
 import dashboardReducer from "./dashboard/dashboardSlice";
 import { cryptoApi } from "./crypto/cryptoApiSlice";
 
