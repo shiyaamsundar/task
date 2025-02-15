@@ -8,7 +8,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { Pagination } from "@mui/material";
 import HeaderBar from "./HeaderBar";
 import { navBarHeading } from "./constants";
-import NewsMiniCard from "./NewsMiniCard";
+import NewsMiniCard from "./newsMiniCard";
 import NewsCard from "./newsCard";
 import NewsCategories from "./NewsCategories";
 import SearchBar from "./SearchBar";
