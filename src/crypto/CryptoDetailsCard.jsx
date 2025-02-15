@@ -21,7 +21,14 @@ const CryptoDetailsCard = ({ cryptoDetails }) => {
 
   return (
     <Card
-      sx={{ display: "flex", alignItems: "center", m: 2, p: 2, boxShadow: 3 }}
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        m: 2,
+        p: 2,
+        boxShadow: 3,
+        minWidth: "300px",
+      }}
     >
       <CardMedia
         component="img"
