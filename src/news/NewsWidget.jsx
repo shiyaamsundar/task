@@ -36,7 +36,6 @@ const NewsWidget = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedCard, setSelectedCard] = useState();
   const location = useLocation().pathname;
-  console.log(location);
   const [query, setQuery] = useState(null);
   const [newFeedDatas, setNewFeedDatas] = useState(null);
   const { data: newsDataCategory } = useGetNewsCategoryDataQuery(selectedCard, {
