@@ -3,7 +3,7 @@ import HeaderBar from "../news/HeaderBar";
 import Box from "@mui/material/Box";
 import { useDispatch, useSelector } from "react-redux";
 import { useGetCryptosQuery } from "../state/crypto/cryptoApiSlice";
-import { updateCurrency } from "../state/crypto/cryptoSLice";
+import { updateCurrency } from "../state/crypto/cryptoSlice";
 import {
   Accordion,
   AccordionDetails,

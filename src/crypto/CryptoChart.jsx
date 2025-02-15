@@ -7,7 +7,7 @@ import {
   useGetCryptoDetailsQuery,
 } from "../state/crypto/cryptoApiSlice";
 import { useSelector, useDispatch } from "react-redux";
-import { updateCurrency } from "../state/crypto/cryptoSLice";
+import { updateCurrency } from "../state/crypto/cryptoSlice";
 import { Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
