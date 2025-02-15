@@ -8,12 +8,12 @@ const WeatherDetailsCard = ({ weatherData }) => {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        width: "100%",
       }}
     >
       {weatherData && (
         <Card
           sx={{
-            maxWidth: 400,
             width: "100%",
             marginTop: 2,
             boxShadow: 3,

@@ -35,7 +35,7 @@ const Dashboard = () => {
     if (cryptoDetails.length > 0) {
       setCryptoGrid(
         cryptoDetails.map((item, index) => ({
-          i: `crypto-${item.id}`,
+          i: `crypto-${item?.id}`,
           x: index % 3,
           y: Math.floor(index / 3),
           w: 3,
@@ -88,7 +88,6 @@ const Dashboard = () => {
             {cryptoGrid.map((gridItem) => {
               const [, cryptoId] = gridItem.i.split("-");
               const item = cryptoDetails.find((d) => d.id === cryptoId);
-
               return (
                 <div key={gridItem.i} data-grid={gridItem}>
                   {item && <CryptoDetailsCard cryptoDetails={item} />}
@@ -123,10 +122,9 @@ const Dashboard = () => {
           >
             {weatherGrid.map((gridItem) => {
               const [, lat, lon] = gridItem.i.split("-");
-
               const item = weatherDetails.find(
                 (d) =>
-                  Number(d?.coord?.lat) === Number(lat) &&
+                  Number(d?.coord?.lat) === Number(lat) ||
                   Number(d?.coord?.lon) === Number(lon)
               );
               return (

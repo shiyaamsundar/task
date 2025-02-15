@@ -101,7 +101,18 @@ const WeatherApp = () => {
         )}
         {!isWeatherLoading && weatherData && (
           <>
-            <WeatherDetailsCard weatherData={weatherData} />
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                margin: "auto",
+                width: "500px",
+              }}
+            >
+              <WeatherDetailsCard weatherData={weatherData} />
+            </Box>
+
             <Box sx={{ textAlign: "center", mt: 2 }}>
               <Button
                 variant="contained"
